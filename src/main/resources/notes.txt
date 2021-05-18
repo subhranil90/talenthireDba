@@ -1,0 +1,24 @@
+/* *** JKS Generation for SSL Implementation *** */
+// JKS File Generation Command
+keytool -genkey -alias talenthire_dba_sslcert -keyalg RSA -keysize 2048 -validity 700 -keypass pass1234 -storepass pass1234 -keystore ssl-talenthire-dba.jks
+
+What is your first and last name?
+  [Unknown]:  subhranil das
+What is the name of your organizational unit?
+  [Unknown]:  talenthire-dba
+What is the name of your organization?
+  [Unknown]:  myorg
+What is the name of your City or Locality?
+  [Unknown]:  kolkata
+What is the name of your State or Province?
+  [Unknown]:  west bengal
+What is the two-letter country code for this unit?
+  [Unknown]:  IN
+Is CN=subhranil das, OU=talenthire-dba, O=myorg, L=kolkata, ST=west bengal, C=IN correct?
+
+-- To view SSL Certificate Content
+keytool -list -keystore ssl-talenthire-dba.jks
+
+/* *** JASYPT For Password Encryption *** */
+Useful Link: https://javatechie4u.medium.com/spring-boot-password-encryption-using-jasypt-9ee731701e70
+
